@@ -10,6 +10,7 @@ beforeEach(() => {
   container = document.createElement('div');
   document.body.appendChild(container);
 });
+
 afterEach(() => {
   document.body.removeChild(container);
   container = null;
@@ -20,3 +21,4 @@ it('renders header', () => {
   const div = container.getElementsByClassName('MuiPaper-rounded')[0];
   expect(div.textContent).toBe('Todo List');
 });
+ 
